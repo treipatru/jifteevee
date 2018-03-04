@@ -1,7 +1,17 @@
 {
-  "name": "jifteevee",
+  "name": "JIFTEEVEE",
   "version": "0.0.1",
-  "private": true,
+  "description": "A gif TV for Raspberry Pi powered by nodejs and telegram bots",
+  "author": "Andrei34",
+  "license": "MIT",
+  "homepage": "https://github.com/treipatru/jifteevee",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treipatru/jifteevee.git"
+  },
+  "bugs": {
+    "url": "https://github.com/treipatru/jifteevee/issues"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },

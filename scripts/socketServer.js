@@ -16,7 +16,8 @@ wss.on('connection', function connection(ws) {
     console.log('Disconnected')
   })
 
-  ws.send('something')
+  // Send a default splash on connect
+  ws.send('https://media.giphy.com/media/26his6GdOe4ygpZJK/giphy.gif')
 })
 
 // Setup broadcast

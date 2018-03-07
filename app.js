@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 
 require('dotenv').config()
 require('./scripts/socketServer')
-require('./scripts/jifmachine')
+require('./scripts/bot')
 
 // ROUTES
 // --------------------------
@@ -27,6 +27,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', index)
 
+// HANDLERS
+// --------------------------
 // Catch 404 and forward to error handler
 app.use(function(req, res, next) {
   let err = new Error('Not Found')
@@ -45,4 +47,6 @@ app.use(function(err, req, res, next) {
   res.render('error')
 })
 
+// EXPORT
+// --------------------------
 module.exports = app

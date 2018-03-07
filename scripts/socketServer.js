@@ -17,7 +17,7 @@ wss.on('connection', function connection(ws) {
   })
 
   // Send a default splash on connect
-  ws.send('https://media.giphy.com/media/26his6GdOe4ygpZJK/giphy.gif')
+  ws.send(process.env.SPLASH)
 })
 
 // Setup broadcast
